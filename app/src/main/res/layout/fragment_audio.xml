@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg_01">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_26"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/audio"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notification_setting_dolby_title"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/w_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/notification_setting_dolby_title_text"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dolby_hdmi_title"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/hdmi_dolby_group"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_pass_through_hdmi"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusLeft="@+id/btn_audiosetting_id"
+                android:nextFocusUp="@id/btn_pass_through_hdmi"
+                android:text="@string/dolby_passthrough"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/btn_rampcm_hdmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nextFocusRight="@id/btn_rampcm_hdmi"
+                android:nextFocusUp="@id/btn_rampcm_hdmi"
+                android:text="@string/dolby_rawpcm"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dolby_spdif_title"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/spdif_dolby_group"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_pass_through_spdif"
+                android:nextFocusLeft="@+id/btn_audiosetting_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="@string/dolby_passthrough"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/btn_rampcm_spdif"
+                android:nextFocusRight="@id/btn_rampcm_spdif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dolby_rawpcm"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerVertical" />
+
+
+    <TextView
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_setting_media_volume_text"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_marginTop="@dimen/h_22"
+        android:layout_gravity="center"
+        android:id="@+id/media_volume_set_btn"
+        android:layout_width="@dimen/w_136"
+        android:layout_height="@dimen/h_50"
+        android:nextFocusLeft="@+id/btn_audiosetting_id"
+        android:nextFocusDown="@id/media_volume_set_btn"
+        android:background="@drawable/sel_button_focus"
+        android:text="@string/media_volume_set_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

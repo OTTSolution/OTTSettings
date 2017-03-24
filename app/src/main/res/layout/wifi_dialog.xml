@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <!--style="@style/wifi_item"
+        style="@style/wifi_item_label"
+        style="@style/wifi_item_edit_content"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/wifi_password" />
+            -->
+
+        <EditText android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:singleLine="true"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/show_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <!--   style="@style/wifi_item"
+        style="@style/wifi_item_label" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+<!--style="@style/wifi_item_content"-->
+        <CheckBox android:id="@+id/show_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="14sp"
+            android:text="@string/wifi_show_password" />
+    </LinearLayout>
+</LinearLayout>

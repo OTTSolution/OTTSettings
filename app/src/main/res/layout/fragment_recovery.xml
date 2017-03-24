@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:background="@drawable/set_bg_01"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/delete_id"
+        android:layout_marginTop="@dimen/h_300"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/recovery_desc"/>
+
+    <Button
+        android:id="@+id/recovery_btn"
+        android:layout_below="@id/delete_id"
+        android:layout_centerHorizontal="true"
+        android:nextFocusLeft="@+id/btn_recoversetting_id"
+        android:nextFocusRight="@id/recovery_btn"
+        android:nextFocusUp="@id/recovery_btn"
+        android:nextFocusDown="@id/recovery_btn"
+        android:layout_marginTop="@dimen/h_50"
+        android:layout_width="@dimen/w_136"
+        android:layout_height="@dimen/h_50"
+        android:text="@string/recovery_btn_desc"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/sel_button_focus"/>
+
+</RelativeLayout>

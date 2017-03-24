@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg_01"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/h_140"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_height="60dp"
+            android:layout_width="300dp"
+            android:background="@drawable/net_speed_background"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/text_white_16_singleLine"
+                android:text="@string/netspeed_connecttype"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/netspeed_connecttype_id"
+                android:gravity="center"
+                style="@style/text_white_16_singleLine"
+                android:textSize="22sp"
+                android:text="@string/netspeed_nonetype"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_height="60dp"
+            android:layout_width="300dp"
+            android:background="@drawable/net_speed_background"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/text_white_16_singleLine"
+                android:text="@string/netspeed_nowspeed"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:id="@+id/netspeed_speed_id"
+                android:gravity="center"
+                style="@style/text_white_16_singleLine"
+                android:text="@string/netspeed_defaultspeed"
+                android:textSize="22sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_height="60dp"
+            android:layout_width="300dp"
+            android:background="@drawable/net_speed_background"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/text_white_16_singleLine"
+                android:text="@string/netspeed_avgspeed"
+                android:textSize="22sp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:id="@+id/netspeed_avgspeed_id"
+                android:gravity="center"
+                style="@style/text_white_16_singleLine"
+                android:text="@string/netspeed_defaultspeed"
+                android:textSize="22sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/h_50"
+        android:gravity="center">
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_50"
+            android:layout_centerHorizontal="true"
+            android:text="@string/netspeed_starttest"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:nextFocusLeft="@+id/btn_netspeedsetting_id"
+            android:nextFocusRight="@+id/start_button"
+            android:nextFocusUp="@+id/start_button"
+            android:nextFocusDown="@+id/start_button"
+            android:background="@drawable/sel_button_focus" />
+    </LinearLayout>
+
+</LinearLayout>

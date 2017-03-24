@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg_01" >
+
+    <TextView
+        android:id="@+id/lan_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_26"
+        android:text="@string/lan_setting"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_lan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lan_setting"
+        android:layout_marginTop="@dimen/h_42"
+        android:layout_marginLeft="@dimen/w_526"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_lansetting_zh"
+            android:nextFocusLeft="@+id/btn_languagesetting_id"
+            android:nextFocusUp="@+id/btn_lansetting_zh"
+            android:nextFocusDown="@+id/btn_lansetting_en"
+            android:nextFocusRight="@+id/btn_lansetting_zh"
+            android:text="@string/lan_zh"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_lansetting_en"
+            android:layout_marginTop="@dimen/h_16"
+            android:nextFocusLeft="@+id/btn_languagesetting_id"
+            android:nextFocusUp="@+id/btn_lansetting_zh"
+            android:nextFocusDown="@+id/btn_lansetting_en"
+            android:nextFocusRight="@+id/btn_lansetting_en"
+            android:text="@string/lan_en"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+</RelativeLayout>

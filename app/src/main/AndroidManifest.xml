@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xugaoxiang.ott.setting"
+    android:sharedUserId="android.uid.system">
+    <!--android:sharedUserId="android.uid.system"-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+
+    <application
+        android:name="com.xugaoxiang.ott.setting.Myapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppStartLoad">
+        <activity android:name="com.xugaoxiang.ott.setting.module.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.longjing.ott.setting"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--恢复出厂-->
+        <receiver android:name="com.xugaoxiang.ott.setting.util.systemutils.MyAdmin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            >
+            <meta-data android:name="android.app.device_admin"
+                android:resource="@xml/my_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <!--恢复出厂的广播-->
+        <receiver android:name="com.android.server.MasterClearReceiver"
+            android:permission="android.permission.MASTER_CLEAR"
+            android:priority="100" >
+            <intent-filter>
+                <!-- For Checkin, Settings, etc.: action=MASTER_CLEAR -->
+                <action android:name="android.intent.action.MASTER_CLEAR" />
+                <!-- MCS always uses REMOTE_INTENT: category=MASTER_CLEAR -->
+                <category android:name="android.intent.category.MASTER_CLEAR_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <!--网络状态变化的广播
+
+        <receiver android:name="com.longjing.ott.setting.ui.fragment.StateFragment$NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+-->
+        <service android:name="com.lzy.okserver.download.DownloadService"/>
+    </application>
+</manifest>

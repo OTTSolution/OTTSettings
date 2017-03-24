@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg_01">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifi_tv"
+        android:layout_marginTop="@dimen/h_26"
+        android:text="@string/wifi_setting"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifi_switch"
+        android:layout_below="@id/wifi_tv"
+        android:layout_marginLeft="@dimen/w_42"
+        android:layout_marginTop="@dimen/h_42"
+        android:focusable="true"
+        android:nextFocusUp="@+id/wifi_switch"
+        android:nextFocusRight="@+id/wifi_switch"
+        android:nextFocusDown="@+id/listview"
+        android:nextFocusLeft="@+id/btn_wifisetting_id"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/w_62"
+        android:id="@+id/listview"
+        android:layout_below="@id/wifi_switch"
+        android:layout_marginTop="@dimen/h_42"
+        android:layout_marginLeft="@dimen/w_42"
+        android:focusable="true"
+        android:nextFocusUp="@+id/wifi_switch"
+        android:nextFocusRight="@+id/listview"
+        android:nextFocusDown="@+id/listview"
+        android:nextFocusLeft="@+id/btn_wifisetting_id"/>
+
+</RelativeLayout>

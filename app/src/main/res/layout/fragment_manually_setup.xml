@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/set_bg_01"
+    tools:context="com.xugaoxiang.ott.setting.module.ethernet.ManuallySetupFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_26"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wire_setup"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/fms_tips"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/fms_ip_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_ipaddress_1"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusUp="@id/et_ipaddress_1"
+            android:nextFocusDown="@+id/et_netmask_1"
+            android:nextFocusLeft="@+id/btn_wiresetting_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_ipaddress_2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusUp="@id/et_ipaddress_2"
+            android:nextFocusDown="@+id/et_netmask_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_ipaddress_3"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:nextFocusUp="@id/et_ipaddress_3"
+            android:nextFocusDown="@+id/et_netmask_1"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_ipaddress_4"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:nextFocusUp="@id/et_ipaddress_4"
+            android:nextFocusDown="@+id/et_netmask_1"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/fms_netmask"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_netmask_1"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusDown="@+id/et_gateway_1"
+            android:nextFocusLeft="@+id/btn_wiresetting_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_netmask_2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusDown="@+id/et_gateway_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_netmask_3"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:nextFocusDown="@+id/et_gateway_1"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_netmask_4"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:nextFocusDown="@+id/et_gateway_1"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fms_gateway"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_gateway_1"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusDown="@+id/et_dns_1"
+            android:nextFocusLeft="@+id/btn_wiresetting_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_gateway_2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusDown="@+id/et_dns_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_gateway_3"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:nextFocusDown="@+id/et_dns_1"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_gateway_4"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:nextFocusDown="@+id/et_dns_1"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fms_dns"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_dns_1"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusDown="@+id/et_dns2_1"
+            android:nextFocusLeft="@+id/btn_wiresetting_id"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_dns_2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:nextFocusDown="@+id/et_dns2_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_dns_3"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:nextFocusDown="@+id/et_dns2_1"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_dns_4"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:nextFocusDown="@+id/et_dns2_1"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fms_dns2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_dns2_1"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:nextFocusLeft="@+id/btn_wiresetting_id"
+            android:textSize="@dimen/text_size_medium"/>
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <EditText
+            android:id="@+id/et_dns2_2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_dns2_3"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_dns2_4"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <!--android:nextFocusLeft="@+id/btn_ethernet_id"-->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/sel_button_focus"
+            android:nextFocusLeft="@+id/btn_wiresetting_id"
+            android:nextFocusDown="@+id/btn_back"
+            android:text="@string/fms_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/sel_button_focus"
+            android:nextFocusRight="@+id/btn_finish"
+            android:nextFocusDown="@+id/btn_finish"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+

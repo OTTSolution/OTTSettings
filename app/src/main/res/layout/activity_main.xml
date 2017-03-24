@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bg_01"
+    android:orientation="horizontal"
+    tools:context="com.xugaoxiang.ott.setting.module.main.MainActivity">
+    <LinearLayout
+        android:layout_width="@dimen/w_288"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="@dimen/w_192"
+        android:layout_marginTop="@dimen/h_88"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:text="@string/manager_center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btn_netstate_id"
+            android:nextFocusUp="@+id/btn_netstate_id"
+            android:text="@string/netstate"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:background="@drawable/sel_button_focus"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_wifisetting_id"
+            android:text="@string/wifisetting"
+            android:textSize="23sp"
+            android:nextFocusRight="@+id/wifi_switch"
+            android:background="@drawable/sel_button_focus"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_wiresetting_id"
+            android:text="@string/wiresetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_netspeedsetting_id"
+            android:text="@string/netspeedsetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_outputsetting_id"
+            android:text="@string/outputsetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_audiosetting_id"
+            android:text="@string/audiosetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_languagesetting_id"
+            android:text="@string/languagesetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+
+        <!--
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_outputsetting_id"
+            android:text="@string/outputsetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+            -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_recoversetting_id"
+            android:text="@string/recoversetting"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+
+        <!--
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_about_id"
+            android:text="@string/about"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"/>
+            -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_update_id"
+            android:text="@string/update"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_upset_id"
+            android:text="@string/upset"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"
+            android:nextFocusDown="@+id/btn_server_id"
+            android:nextFocusRight="@+id/update_ed1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_server_id"
+            android:text="@string/server"
+            android:textSize="23sp"
+            android:background="@drawable/sel_button_focus"
+            android:nextFocusDown="@+id/btn_server_id"
+            android:nextFocusRight="@+id/server_ed1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/h_88"
+            android:layout_marginLeft="@dimen/w_10" />
+    </LinearLayout>
+
+</LinearLayout>

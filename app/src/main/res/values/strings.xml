@@ -1,0 +1,204 @@
+<resources>
+    <!--首页按钮-->
+    <string name="app_name">Setting</string>
+    <string name="manager_center">管理中心</string>
+    <string name="netstate">网络状态</string>
+    <string name="wifisetting">无线设置</string>
+    <string name="wiresetting">有线设置</string>
+    <string name="netspeedsetting">网络测速</string>
+    <string name="audiosetting">音频设置</string>
+    <string name="languagesetting">语言设置</string>
+    <string name="outputsetting">输出模式</string>
+    <string name="recoversetting">重置设备</string>
+    <string name="update">系统升级</string>
+    <string name="upset">升级设置</string>
+    <string name="server">服务设置</string>
+
+    <!--网络状态碎片-->
+
+    <string name="network">网络</string>
+    <string name="IP地址">IP地址</string>
+    <string name="Mac地址">Mac地址</string>
+    <string name="netmask">网络掩码</string>
+    <string name="dns1">DNS服务器</string>
+    <string name="dns2">备用DNS服务器</string>
+    <string name="fammask">家庭网关</string>
+
+
+    <string name="networktv1">网络连接正常</string>
+    <string name="networktv2">网络连接异常</string>
+
+
+    <!--有线设置-->
+    <string name="ethernet_configtypestring">网络配置方式</string>
+    <string name="ethernet_configautostring">网络自动获取</string>
+    <string name="ethernet_configmanstring">网络手动设置</string>
+    <string name="ethernet_configstart">开始</string>
+    <string name="ethernet_confignotify">使用前请检查网线是否正常连接</string>
+
+    <string name="ethernet_wifi_completetv">网络配置失败!</string>
+    <string name="ethernet_success_completetv">网络配置完成!</string>
+    <string name="ethernet_fail_completetv">网络配置失败请检查网线是否插入</string>
+    <string name="ethernet_complete">完成</string>
+    <!--有线设置补充-->
+    <string name="wire_tv">正在配置,请稍后...</string>
+    <string name="wire_connected">网络已连接</string>
+    <!--有线设置手动获取-->
+    <string name="wire_ip_error">IP地址错误，请检查后重试！</string>
+    <string name="wire_mask_error">网络掩码错误，请检查后重试！</string>
+    <string name="wire_gateway_error">家庭网关错误，请检查后重试！</string>
+    <string name="wire_dns1_error">DNS错误，请检查后重试！</string>
+    <string name="wire_dns2_error">备用DNS错误，请检查后重试！</string>
+
+
+    <!--wifi设置-->
+    <string name="wifi_setting">无线设置</string>
+    <string name="wifi_scan">无线扫描</string>
+    <string name="wifi_add">添加网络</string>
+    <string name="wifi_connecting">正在连接...</string>
+    <string name="wifi_connected">已连接</string>
+    <string name="text_on">ON</string>
+    <string name="text_off">OFF</string>
+
+    <!--输出模式-->
+
+    <string name="title_display_mode">HDMI输出模式</string>
+    <string name="display_mode_radiobutton_null">未知视频模式</string>
+
+    <!-- 恢复出厂设置 -->
+    <string name="recovery_desc">此操作会清除本设备的数据，包括：系统及应用程序数据,已下载的应用程序。</string>
+    <string name="recovery_btn_desc">确定</string>
+    <string name="master_clear_progress_title">正在清除</string>
+    <string name="master_clear_progress_text">请等待 ...</string>
+    <string name="recovery_dialog_msg">恢复出厂设置？您所有的个性化设置数据将会被清空！</string>
+    <string name="recovery_dialog_ok">确定</string>
+    <string name="recovery_dialog_cancel">取消</string>
+    <string name="recovery_dialog_title">提示</string>
+
+
+    <!-- 音频设置 -->
+    <string name="audio">音频设置:</string>
+    <string name="notification_setting_dolby_title_text">Dolby Digital Plus音频输出:</string>
+    <string name="dolby_hdmi_title">HDMI:</string>
+    <string name="dolby_passthrough">Passthrough</string>
+    <string name="dolby_rawpcm">Raw Pcm</string>
+    <string name="dolby_spdif_title">SPDIF:</string>
+    <string name="notification_setting_media_volume_text">音频设置只做音频输出设置</string>
+    <string name="media_volume_set_text">设置</string>
+    <string name="volume_dialog_title_text">音量</string>
+    <string name="volume_dialog_0">0</string>
+    <string name="volume_dialog_100">100</string>
+    <string name="volume_dialog_cancel">取消</string>
+    <string name="volume_dialog_ok">确认</string>
+
+
+    <!--网络测速-->
+    <string name="netspeed_starttest">开始测试</string>
+    <string name="netspeed">网络测速</string>
+    <string name="netspeed_connecttype">连接类型:</string>
+    <string name="netspeed_nowspeed">当前网速:</string>
+    <string name="netspeed_avgspeed">平均网速:</string>
+    <string name="netspeed_nonetype">未知</string>
+    <string name="netspeed_defaultspeed">0.0 kB/s</string>
+    <string name="netspeed_unit">kb/s</string>
+    <string name="netspeed_no">请检查网络，测速地址:http://gdown.baidu.com/data/wisegame/6f9153d4a8d1f7d8/QQ.apk!</string>
+
+    <string name="net_nonetype">未知</string>
+    <string name="net_ethernet">有线网络</string>
+    <string name="net_wifi">无线网络</string>
+    <string name="net_none">网络</string>
+
+    <!--版本升级 -->
+
+    <string name="bsp_update">版本升级</string>
+    <string name="software_version">软件版本号:</string>
+    <string name="firmware_version">固件版本号:</string>
+    <string name="software_version_number">null</string>
+    <string name="firmware_version_number">null</string>
+    <string name="update_button">检查更新</string>
+    <string name="update_state">当前版本已是最新</string>
+    <string name="status_download_failed">下载失败</string>
+    <string name="status_download_ok">下载成功</string>
+    <string name="download_size">大小: 0M/0M</string>
+    <string name="download_percent">进度: %0</string>
+    <!--版本升级补充 -->
+    <string name="Unable_to_connect_updata">无法连接</string>
+    <string name="check_net_updata">请检查网络连接</string>
+    <string name="sure_updata">确定</string>
+    <string name="canc_updata">取消</string>
+    <string name="later_updata">请稍后...</string>
+    <string name="version_updata">版本：</string>
+    <string name="descrption_updata">描述: </string>
+    <string name="info_updata">更新详情</string>
+    <string name="download_updata">下载</string>
+    <string name="system_information_updata">系统更新信息</string>
+    <string name="system_latest_updata">当前已是最新系统无需更新</string>
+    <string name="Unable_to_connect_server_updata">无法连接服务器</string>
+    <string name="check_again_updata">请检查网络后重试</string>
+    <string name="percent_updata">进度</string>
+    <string name="install_successfully">安装成功</string>
+    <string name="package_broken_updata">安装包出错</string>
+
+
+    <!--语言设置-->
+    <string name="lan_setting">语言</string>
+    <string name="lan_zh">中文</string>
+    <string name="lan_en">English</string>
+    <!--升级设置碎片-->
+    <string name="upset_setting">升级设置</string>
+    <string name="upset_set">设置</string>
+    <string name="upset_retv">当前地址:</string>
+
+    <!--服务设置碎片-->
+    <string name="server_setting">服务设置</string>
+    <string name="server_retv">当前地址:</string>
+
+    <!--更改服务器地址-->
+    <string name="set1">设置成功</string>
+    <string name="set2">设置失败</string>
+    <string name="IP地址up">IP地址</string>
+    <string name="set_address">端口地址</string>
+
+    <!--wifi设置2-->
+    <string name="wifi_connect">连接</string>
+    <string name="wifi_cancel">取消</string>
+    <string name="wifi_forget">取消保存</string>
+    <string name="wifi_disconnect">断开</string>
+    <string name="wifi_confirm">完成</string>
+    <string name="wifi_password">密码</string>
+    <string name="wifi_supcolect">高级选项</string>
+    <string name="wifi_show_password">显示密码</string>
+    <string name="wifi_connectde1">正在连接...</string>
+    <string name="wifi_connectde2">已连接</string>
+    <!--wifi弹出框-->
+    <string name="dialog_connect">连接</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_break">断开</string>
+    <string name="automatic">自动</string>
+    <string name="status_message">状态消息</string>
+    <string name="security">安全性</string>
+    <string name="signal_power">信号强度</string>
+    <string name="link_speed">连接速度</string>
+    <string name="ip_address">IP地址</string>
+    <string name="mac_address">本机MAC</string>
+    <string name="gateway">网关</string>
+    <string name="ap_mac_address">Ap MAC</string>
+    <string name="wifi">Wifi接口名</string>
+    <string name="symbol_dian">.</string>
+    <string name="unknown">未知</string>
+    <string name="show_psd">显示密码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fms_tips">遥控器输入\'#\'键删除</string>
+    <string name="fms_ip_address">IP 地址:</string>
+    <string name="fms_netmask">子网掩码:</string>
+    <string name="fms_gateway">家庭网关:</string>
+    <string name="fms_dns">DNS服务器:</string>
+    <string name="fms_dns2">DNS备用服务器:</string>
+    <string name="fms_back">上一步</string>
+    <string name="finish">完成</string>
+    <string name="wire_setup">有线设置</string>
+
+
+</resources>

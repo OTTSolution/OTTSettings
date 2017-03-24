@@ -1,0 +1,197 @@
+<resources>
+    <!--首页按钮-->
+    <string name="app_name">Setting</string>
+    <string name="manager_center">Manager</string>
+
+    <string name="netstate">WetState</string>
+    <string name="wifisetting">WifiSetting</string>
+    <string name="wiresetting">WireSetting</string>
+    <string name="netspeedsetting">NetworkSpeed</string>
+    <string name="audiosetting">AudioSetting</string>
+    <string name="languagesetting">LanguageSetting</string>
+    <string name="outputsetting">Outputsetting</string>
+    <string name="recoversetting">ResetDevice</string>
+    <string name="about">About</string>
+    <string name="update">Update</string>
+    <string name="upset">UpgradeSettings</string>
+    <string name="server">ServiceSettings</string>
+
+    <!--网络状态碎片-->
+
+    <string name="network">Network</string>
+    <string name="IP地址">IPAddress</string>
+    <string name="Mac地址">MacAddress</string>
+    <string name="netmask">Subnet mask</string>
+    <string name="dns1">DNS1</string>
+    <string name="dns2">DNS2</string>
+    <string name="fammask">home gateway</string>
+
+
+    <string name="networktv1">NormalConnection</string>
+    <string name="networktv2">AbnormalConnection</string>
+
+
+    <!--有线设置-->
+    <string name ="ethernet_configtypestring">Connection Configuration</string>
+    <string name ="ethernet_configautostring">Automatic Acquisition</string>
+    <string name ="ethernet_configmanstring">Manual Setup</string>
+    <string name ="ethernet_configstart">Start</string>
+    <string name ="ethernet_confignotify">Before use, please check whether the network cable is properly connected</string>
+
+    <string name ="ethernet_wifi_completetv">Network configuration failed!</string>
+    <string name ="ethernet_success_completetv">Network configuration complete!</string>
+    <string name ="ethernet_fail_completetv">Network configuration failed please check the network cable is inserted</string>
+    <string name ="ethernet_complete">Complete</string>
+    <!--有线设置补充-->
+    <string name="wire_tv">Is the configuration later, please...</string>
+    <string name="wire_connected">Network is connected</string>
+    <!--有线设置手动获取-->
+    <string name="wire_ip_error">IP Address Wrong, please check！</string>
+    <string name="wire_mask_error">MASK Address Wrong, please check！</string>
+    <string name="wire_gateway_error">GateWay Address Wrong, please check!</string>
+    <string name="wire_dns1_error">DNS1 Address Wrong, please check!</string>
+    <string name="wire_dns2_error">DNS2 Address Wrong, please check!</string>
+
+    <!--wifi设置-->
+    <string name ="wifi_setting">Wireless settings</string>
+    <string name ="wifi_scan">Wireless scanning</string>
+    <string name ="wifi_add">Add network</string>
+    <string name ="wifi_connecting">On connection...</string>
+    <string name ="wifi_connected">Already connected</string>
+    <string name ="text_on">ON</string>
+    <string name ="text_off">OFF</string>
+
+    <!--输出模式-->
+
+    <string name="title_display_mode">HDMI Output mode</string>
+    <string name="display_mode_radiobutton_null">Unknown video mode</string>
+
+    <!-- 恢复出厂设置 -->
+    <string name="recovery_desc">This action will clear this equipment data, including: the system and application data, the application has been downloaded.</string>
+    <string name="recovery_btn_desc">Determine</string>
+    <string name="master_clear_progress_title">Being cleared</string>
+    <string name="master_clear_progress_text">Please wait...</string>
+    <string name="recovery_dialog_msg">Restore factory settings? All your personalization data will be emptied!</string>
+    <string name="recovery_dialog_ok">Determine</string>
+    <string name="recovery_dialog_cancel">Cancel</string>
+    <string name="recovery_dialog_title">Prompt</string>
+
+
+    <!-- 音频设置 -->
+    <string name="audio">Audio setup:</string>
+    <string name="notification_setting_dolby_title_text">Dolby Digital Plus Audio output:</string>
+    <string name="dolby_hdmi_title">HDMI:</string>
+    <string name="dolby_passthrough">Passthrough</string>
+    <string name="dolby_rawpcm">Raw Pcm</string>
+    <string name="dolby_spdif_title">SPDIF:</string>
+    <string name="notification_setting_media_volume_text">Audio settings only do audio output settings</string>
+    <string name="media_volume_set_text">Set up</string>
+    <string name="volume_dialog_title_text">Volume</string>
+    <string name="volume_dialog_0">0</string>
+    <string name="volume_dialog_100">100</string>
+    <string name="volume_dialog_cancel">Cancel</string>
+    <string name="volume_dialog_ok">Prompt</string>
+
+    <!--网络测速-->
+    <string name="netspeed_starttest">Start testing</string>
+    <string name="netspeed">Network measurement</string>
+    <string name="netspeed_connecttype">Line type:</string>
+    <string name="netspeed_nowspeed">Current speed:</string>
+    <string name="netspeed_avgspeed">Average speed:</string>
+    <string name="netspeed_nonetype">Unknown</string>
+    <string name="netspeed_defaultspeed">0.0 kB/s</string>
+    <string name="netspeed_unit">kb/s</string>
+    <string name="netspeed_no">Please check the network,url:http://gdown.baidu.com/data/wisegame/6f9153d4a8d1f7d8/QQ.apk!</string>
+
+    <string name ="net_nonetype">Unknown</string>
+    <string name ="net_ethernet">Wired</string>
+    <string name ="net_wifi">Wireless</string>
+    <string name ="net_none">Network</string>
+
+    <!--版本升级 -->
+
+    <string name="bsp_update">Version upgrade</string>
+    <string name="software_version">Software version number:</string>
+    <string name="firmware_version">Firmware Version:</string>
+    <string name="software_version_number">null</string>
+    <string name="firmware_version_number">null</string>
+    <string name="update_button">Check</string>
+    <string name="update_state">The current version is the latest</string>
+    <string name="status_download_failed">Download failed</string>
+    <string name="status_download_ok">Download sucessfully</string>
+    <string name="download_size">size: 0M/0M</string>
+    <string name="download_percent">percent: %0</string>
+    <!--版本升级补充 -->
+    <string name="Unable_to_connect_updata">Unable to connect</string>
+    <string name="check_net_updata">Please check the network connection</string>
+    <string name="sure_updata">Confirm</string>
+    <string name="canc_updata">Cancel</string>
+    <string name="later_updata">Please later...</string>
+    <string name="version_updata">Version：</string>
+    <string name="descrption_updata">Descrption: </string>
+    <string name="info_updata">Info of package to be updated</string>
+    <string name="download_updata">Download</string>
+    <string name="system_information_updata">The system update information</string>
+    <string name="system_latest_updata">The current is the latest system</string>
+    <string name="Unable_to_connect_server_updata">Unable to connect to server</string>
+    <string name="check_again_updata">Please try again after checking the network.</string>
+    <string name="percent_updata">percent</string>
+    <string name="install_successfully">Install successfully</string>
+    <string name="package_broken_updata">The installation package error</string>
+
+    <!--语言设置-->
+    <string name="lan_setting">Language</string>
+    <string name="lan_zh">中文</string>
+    <string name="lan_en">English</string>
+    <!--升级设置碎片-->
+    <string name="upset_setting">UpgradeSettings</string>
+    <string name="upset_set">Settings</string>
+    <string name="upset_retv">Current Address:</string>
+
+    <!--服务设置碎片-->
+    <string name="server_setting">Service Settings</string>
+    <string name="server_retv">Current Address:</string>
+
+    <!--更改服务器地址-->
+    <string name="set1">Set Success</string>
+    <string name="set2">Set Failed</string>
+    <string name="IP地址up">IP Address</string>
+    <string name="set_address">Port Address</string>
+
+    <!--wifi设置2-->
+    <string name="wifi_connect">Connect</string>
+    <string name="wifi_cancel">Cancel</string>
+    <string name="wifi_forget">Cancel Save</string>
+    <string name="wifi_disconnect">Break</string>
+    <string name="wifi_confirm">Complete</string>
+    <string name="wifi_password">Password</string>
+    <string name="wifi_supcolect">Advanced  Options</string>
+    <string name="wifi_show_password">Display Password</string>
+    <string name="wifi_connectde1">On Connection...</string>
+    <string name="wifi_connectde2">Already Connected</string>
+    <string name="automatic">Auto</string>
+    <string name="status_message">Status</string>
+    <string name="security">Security</string>
+    <string name="signal_power">SignalPower</string>
+    <string name="link_speed">LinkSpeed</string>
+    <string name="ip_address">IPAddress</string>
+    <string name="mac_address">MAC</string>
+    <string name="gateway">gateway</string>
+    <string name="ap_mac_address">Ap MAC</string>
+    <string name="wifi">SSID</string>
+    <string name="symbol_dian">.</string>
+    <string name="unknown">Unknown</string>
+    <string name="show_psd">Show password</string>
+
+
+    <string name="fms_tips">press # to delete</string>
+    <string name="fms_ip_address">IP Address:</string>
+    <string name="fms_netmask">Net Mask:</string>
+    <string name="fms_gateway">Gate Way:</string>
+    <string name="fms_dns">DNS:</string>
+    <string name="fms_dns2">DNS backup server:</string>
+    <string name="fms_back">back</string>
+    <string name="finish">finish</string>
+    <string name="wire_setup">Ethernet Set</string>
+
+</resources>

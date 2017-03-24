@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--//按钮点击的样式-->
+    <!--//按钮得到焦点的样式-->
+    <!-- <item android:drawable="@drawable/button_shape_focused"  android:state_focused="true"/>
+    <item android:drawable="@drawable/button_shape_default"/>
+
+    <item android:drawable="@drawable/button_shape_pressed"  android:state_pressed="true"/>
+    -->
+
+    <item android:drawable="@color/black"  android:state_focused="true"/>
+    <!--//按钮没有焦点的样式-->
+
+    <item android:drawable="@color/bg_et_blue"  android:state_focused="false"/>
+</selector>
